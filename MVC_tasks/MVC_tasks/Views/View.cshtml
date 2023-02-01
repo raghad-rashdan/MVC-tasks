@@ -1,0 +1,26 @@
+﻿@Model MVC_tasks.Models.Student
+
+@{
+    ViewBag.Title = "Student";
+}
+
+<h2>Student page</h2>
+<table>
+    <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Major</td>
+        <td>Faculity</td>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ID</td>
+            <td>@item.Name</td>
+            <td>@item.Major</td>
+            <td>@item.Faculity</td>
+        </tr>
+    }
+
+</table>
+
